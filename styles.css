@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(black, #243b55);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  box-sizing: border-box;
+  width: 15rem;
+  height: 3rem;
+  font-family: sans-serif;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  color: white;
+  text-transform: capitalize;
+  line-height: 3rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+ul li:nth-child(odd) {
+  background: linear-gradient(to right, purple, blue);
+  text-align: left;
+  padding-left: 10%;
+  transform: perspective(31.25rem)rotateY(45deg)
+}
+
+ul li:nth-child(odd):hover {
+  transform: perspective(12.5rem)rotateY(45deg);
+  padding-left: 5%;
+}
+
+ul li:nth-child(even) {
+  background: linear-gradient(to left, purple, blue);
+  text-align: right;
+  padding-right: 10%;
+  transform: perspective(31.25rem)rotateY(-45deg)
+}
+
+ul li:nth-child(even):hover {
+  transform: perspective(12.5rem)rotateY(-45deg);
+  padding-right: 5%;
+}
